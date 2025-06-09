@@ -1,46 +1,44 @@
 UnitConverterPro
-🚀 A modern Unit Converter Android App built with Jetpack Compose and C++ via JNI (NDK) for efficient native unit conversions.
+🚀 A modern Unit Converter Android App built with Jetpack Compose and C++ (NDK) for fast native unit calculations.
 
 📱 Features
-🔄 Convert Length, Temperature, and Weight
+Convert Length, Temperature, and Weight units
 
-🎨 Supports Dark Mode and Light Mode
+Supports Dark & Light Mode
 
-🗣️ Built-in Speech Services for accessibility
+Speech services for voice input
 
-💡 Clean UI with Jetpack Compose
+Jetpack Compose UI
 
-⚙️ Native C++ performance using Android NDK
+Native C++ via JNI for high-performance logic
 
-⚡ Lightweight, fast, and minimal
+Lightweight & minimal
 
 🛠️ How to Build and Run
-Clone the repo
-
 bash
 Copy
 Edit
 git clone https://github.com/your-username/UnitConverterPro.git
 cd UnitConverterPro
-Open in Android Studio
-Make sure NDK and CMake are installed via SDK Manager.
+Open the project in Android Studio (Koala or later)
 
-Build the Project
+Ensure NDK & CMake are installed (via SDK Manager)
+
+Build with:
 
 Build > Clean Project
 
 Build > Rebuild Project
 
-Click Run ▶️
+Click ▶️ Run
 
 🧠 How NDK is Used
-The app uses JNI to connect Kotlin with native C++ functions for high-performance unit conversions.
+Conversions are processed in unitconverterpro.cpp
 
-All logic is handled inside unitconverterpro.cpp
+Kotlin calls C++ through JNI
 
-Kotlin calls C++ methods via extern "C" JNI bridge
+JNI functions implemented using extern "C" for:
 
-🧮 Native C++ Methods
 convertLength()
 
 convertTemperature()
@@ -48,21 +46,12 @@ convertTemperature()
 convertWeight()
 
 🖼️ Screenshots
-🔦 Light Mode
-Home	Dropdown	Result
-		
-
-🌙 Dark Mode
-Dark Mode UI
-
-
+<div align="center"> <img src="https://github.com/user-attachments/assets/43d882d7-1f35-4159-a446-fabf65aa0366" alt="Home Screen" width="30%"> <img src="https://github.com/user-attachments/assets/894454f8-5dd0-46d9-b5c7-e09eefcd8268" alt="Dropdown" width="30%"> <img src="https://github.com/user-attachments/assets/b50b0b02-16a9-4751-b430-9bd05cb4ea2f" alt="Result" width="30%"> <br/><br/> <img src="https://github.com/user-attachments/assets/061cc9ed-9b75-4480-b984-7ab9a76a94dd" alt="Dark Mode" width="30%"> </div>
 📦 Tech Stack
-💻 Jetpack Compose (UI)
+Kotlin + Jetpack Compose
 
-🧠 Kotlin
+Android NDK (C++)
 
-⚙️ NDK (C++)
+JNI Bridge
 
-🔗 JNI Bridge
-
-🛠️ Android Studio (Koala)
+Android Studio (Koala)
